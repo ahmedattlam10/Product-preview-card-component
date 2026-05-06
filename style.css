@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: hsl(30, 38%, 92%);
+    --bg-card-color: hsl(0, 0%, 100%);
+    --primary-color: hsl(158, 36%, 37%);
+    --active-state-color: hsl(158, 42%, 18%);
+    --h1--color: hsl(212, 21%, 14%);
+    --text-color: hsl(228, 12%, 48%);
+
+    --p-font-size: 14px;
+
+    --border-r:10px;
+
+    --fw-midium: 500;
+    --fw-bold: 700;
+
+    --ff-body: "Montserrat" , sans-serif;
+    --ff-heading: "Fraunces" , serif;
+}
+
+
+body{
+    font-family: var(--ff-body);
+    background-color: var(--bg-color);
+     margin: 0;
+}
+
+.page{
+   
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: var(--bg-card-color);
+    width: 90%;
+    max-width: 38.5rem;
+    border-radius: var(--border-r);
+    overflow: hidden;
+}
+
+.card-img img{
+    width: 100%;
+    display: block;
+}
+
+.card-content{
+    padding: 32px;
+
+}
+
+.category{
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: var(--fw-midium);
+    font-size: var(--p-font-size);
+}
+
+h1{
+    font-family: var(--ff-heading);
+    color: var(--h1--color);
+    font-weight: var(--fw-bold);
+    font-size: 2.2rem;
+}
+
+.discription{
+    color: var(--text-color);
+    font-size: var(--p-font-size);
+    font-weight: var(--fw-midium);
+    line-height: 1.6;
+}
+
+.prices{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.new-price{
+    color: var(--primary-color);
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-bold);
+    font-size: 1.9rem;
+}
+
+.old-price{
+    color: var(--text-color);
+    font-weight: var(--fw-midium);
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
+.card-button{
+    background-color: var(--primary-color);
+    color: var(--bg-card-color);
+    border-radius: 8px;
+    border-style: none;
+    width: 90%;
+    height: 2.8rem;
+    margin-top: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.card-button:hover{
+    background-color: var(--active-state-color);
+}
+
+.card-button:focus{
+    background-color: var(--active-state-color);
+}
+
+.card-button:focus-visible{
+    background-color: var(--active-state-color);
+    outline: 2px solid var(--active-state-color);
+    outline-offset: 2px;
+}
+
+
+
+
+
+@media (min-width:768px){
+    .card{
+        display: flex;
+        max-width: 38.5rem;
+    }
+}
+
+.card-img , .card-content{
+    width: 50%;
+}
+
+.card-img img{
+    height: 100%;
+}
+
+
+.attribution { font-size: 0.6875rem; text-align: center; }
+.attribution a { color: var(--active-state-color); }
