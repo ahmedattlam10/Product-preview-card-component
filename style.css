@@ -7,14 +7,14 @@
     --bg-card-color: hsl(0, 0%, 100%);
     --primary-color: hsl(158, 36%, 37%);
     --active-state-color: hsl(158, 42%, 18%);
-    --h1--color: hsl(212, 21%, 14%);
+    --h1-color: hsl(212, 21%, 14%);
     --text-color: hsl(228, 12%, 48%);
 
     --p-font-size: 0.875rem;
 
     --border-r:10px;
 
-    --fw-midium: 500;
+    --fw-medium: 500;
     --fw-bold: 700;
 
     --ff-body: "Montserrat" , sans-serif;
@@ -58,13 +58,13 @@ body{
     color: var(--text-color);
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-weight: var(--fw-midium);
-    font-size: var(--p-font-size);
+    font-weight: var(--fw-medium);
+    font-size: 1rem;
 }
 
 h1{
     font-family: var(--ff-heading);
-    color: var(--h1--color);
+    color: var(--h1-color);
     font-weight: var(--fw-bold);
     font-size: 2.2rem;
 }
@@ -72,7 +72,7 @@ h1{
 .description{
     color: var(--text-color);
     font-size: var(--p-font-size);
-    font-weight: var(--fw-midium);
+    font-weight: var(--fw-medium);
     line-height: 1.6;
 }
 
@@ -92,7 +92,7 @@ h1{
 
 .old-price{
     color: var(--text-color);
-    font-weight: var(--fw-midium);
+    font-weight: var(--fw-medium);
     font-size: 1rem;
     text-decoration: line-through;
 }
@@ -123,7 +123,7 @@ h1{
 
 .card-button:focus-visible{
     background-color: var(--active-state-color);
-    outline: 3px solid var(--h1--color);
+    outline: 3px solid var(--h1-color);
     outline-offset: 3px;
 }
 
@@ -136,15 +136,18 @@ h1{
         display: flex;
         max-width: 38.5rem;
     }
-}
-
-.card-img , .card-content{
+    .card-img , .card-content{
     width: 50%;
 }
 
 .card-img img{
     height: 100%;
+    object-fit: cover
 }
+    
+}
+
+
 
 
 .attribution { font-size: 0.6875rem; text-align: center; }
