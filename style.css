@@ -10,7 +10,7 @@
     --h1--color: hsl(212, 21%, 14%);
     --text-color: hsl(228, 12%, 48%);
 
-    --p-font-size: 14px;
+    --p-font-size: 0.875rem;
 
     --border-r:10px;
 
@@ -57,7 +57,7 @@ body{
 .category{
     color: var(--text-color);
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     font-weight: var(--fw-midium);
     font-size: var(--p-font-size);
 }
@@ -69,7 +69,7 @@ h1{
     font-size: 2.2rem;
 }
 
-.discription{
+.description{
     color: var(--text-color);
     font-size: var(--p-font-size);
     font-weight: var(--fw-midium);
@@ -123,8 +123,8 @@ h1{
 
 .card-button:focus-visible{
     background-color: var(--active-state-color);
-    outline: 2px solid var(--active-state-color);
-    outline-offset: 2px;
+    outline: 3px solid var(--h1--color);
+    outline-offset: 3px;
 }
 
 
