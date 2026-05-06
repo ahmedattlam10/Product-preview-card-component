@@ -27,10 +27,10 @@ The goal was to build a responsive product card that works well on both mobile a
 
 ## Links
 
-- Live Site URL: 
-- Solution URL: 
+- Live Site URL: https://ahmedattlam10.github.io/Product-preview-card-component/
+
 
 ## Author
 
-- Frontend Mentor - [@YOUR_USERNAME](https://www.frontendmentor.io/profile/YOUR_USERNAME)
-- GitHub - [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+- Frontend Mentor - https://www.frontendmentor.io/profile/ahmedattlam10
+- GitHub - [https://github.com/ahmedattlam10
